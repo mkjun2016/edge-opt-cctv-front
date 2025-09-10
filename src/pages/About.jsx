@@ -1,6 +1,4 @@
-import MarkdownView from 'react-showdown';
-import sample1 from '/Users/kevin/workspace/edge-opt-cctv-front/src/pages/CV_project.md?raw';
-import sample2 from '/Users/kevin/workspace/edge-opt-cctv-front/src/pages/CV_project2.md?raw';
+import React from 'react';
 
 const About = () => {
   return (
@@ -10,7 +8,7 @@ const About = () => {
         <p>This is Moonkyu Jun's CV Projects.</p>
       </header>
       <div className="w-full p-4 h-full rounded-2xl border border-gray-200 bg-white shadow">
-        <MarkdownView markdown={sample1} />
+        <p>FPS comparison, Optimization Methods Theory Self-Analysis</p>
         <a 
           href="https://velog.io/@mkjun2022/posts" 
           target="_blank" 
@@ -21,7 +19,7 @@ const About = () => {
         </a>
       </div>
       <div className="w-full p-4 h-full rounded-2xl border border-gray-200 bg-white shadow">
-        <MarkdownView markdown={sample2} />
+        <p>MediaPipe, OpenCV Pose Estimation & Method to Estimate Body Types</p>
         <a 
           href="https://velog.io/@mkjun2022/posts" 
           target="_blank" 
