@@ -7,15 +7,15 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <nav className="p-4 bg-white shadow flex gap-4">
-        <Link to="/" className="text-blue-600 hover:underline">Home</Link>
-        <Link to="/dashboard" className="text-blue-600 hover:underline">Dashboard</Link>
+        <Link to="/home" className="text-blue-600 hover:underline">Home</Link>
+        <Link to="/" className="text-blue-600 hover:underline">Dashboard</Link>
         <Link to="/about" className="text-blue-600 hover:underline">About</Link>
       </nav>
 
       <div className="p-6">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
