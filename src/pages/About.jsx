@@ -10,7 +10,7 @@ const About = () => {
       <div className="w-full p-4 h-full rounded-2xl border border-gray-200 bg-white shadow">
         <p>FPS comparison, Optimization Methods Theory Self-Analysis</p>
         <a 
-          href="https://velog.io/@mkjun2022/posts" 
+          href="https://github.com/mkjun2016/edge-opt-cctv-front" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-blue-500 hover:underline"

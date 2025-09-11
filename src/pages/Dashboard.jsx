@@ -53,7 +53,12 @@ export function ChartLineMultiple({ title, description }) {
   const [ws, setWs] = useState(null)
 
 useEffect(() => {
-  const socket = new WebSocket("ws://localhost:8000/ws")
+  const wsUrl =
+    window.location.hostname === "localhost"
+      ? "ws://localhost:8000/ws"
+      : "wss://moonkyucv.mkjun55.workers.dev/";
+  const socket = new WebSocket(wsUrl);
+  
   socket.onopen = () => console.log("WS connected")
 
   socket.onmessage = (event) => {
